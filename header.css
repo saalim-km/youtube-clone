@@ -1,0 +1,117 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    background-color: white;
+}
+.left-section {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: 20px;
+    padding: 26px;
+    margin-left: 3px;
+}
+.middle-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.right-section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 22px;
+}
+.hamburger-icon {
+    width: 24px;
+}
+.yt-logo {
+    height: 20px;
+}
+.search-input {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+    max-width: 470px;
+    border: 1px solid #cccccc;
+    height: 39px;
+    padding-left: 15px;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 15px;
+}
+.search-btn {
+    height: 25px;
+    background: #80808017;
+    width: 60px;
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 1px solid #cccccc;
+}
+.voice-search {
+    height: 24px;
+    width: 40px;
+    background: #80808017;
+    padding: 7px 0 7px 0;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.upload-btn {
+    height: 24px;
+}
+.notification-btn {
+    height: 24px;
+}
+.profile-img {
+    height: 35px;
+    border-radius: 20px;
+}
+
+@media (max-width:600px) {
+    .search-input {
+        display: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+
+        
+    }
+    .voice-search {
+        background: none;
+        position: absolute;
+        left: 25px;
+    }
+    .search-btn {
+        border: none;
+        background: none;
+    }
+    .left-section {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .voice-search {
+        display: none;
+    }
+    .middle-section {
+        flex: 0;
+        width: 1px;
+    }
+    .right-section {
+        width: 140px;
+    }
+    .left-section {
+        flex: 1;
+    }
+}
